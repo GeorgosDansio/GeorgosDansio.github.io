@@ -1,2 +1,2 @@
-# multiprogrammer.github.io
+# multiprogrammer
 Test/game for student IT
