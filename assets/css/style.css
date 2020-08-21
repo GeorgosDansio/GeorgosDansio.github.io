@@ -1,0 +1,427 @@
+html {
+	height: 100%;
+}
+body {
+	margin: 0;	
+    background: url(/assets/img/background_2.jpg) center no-repeat;
+    background-size: cover;
+	height: 100%;
+}
+
+#shapka {
+	width: 100%;
+    height: 62px;
+    background: #723c7f;
+}
+
+#logo {
+	width: 100px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+#logo img {
+	width: 60%;
+	position: absolute;
+	top: 0px;
+	left: 10px;
+}
+
+#logo span {
+	font-size: 37px;
+	position: absolute;
+	top: 9px;
+	left: 96px;
+	color: white;
+}
+
+#menu {
+	float: right;
+	height: 100%;
+}
+
+#menu a {
+	color: white;
+	text-decoration: none;
+	font-size: 25px;
+	display: block;
+	height: calc(100% - 16px);
+    float: left;
+    padding: 16px 10px 0;
+}
+
+
+#menu a:hover {
+	background: black;
+	
+}
+
+#content {
+	width: 800px;
+	height: calc(100% - 100px);
+	margin: 0 auto;
+	background: white;
+	overflow: hidden;
+
+
+}
+
+#poisk {
+	height: 30px;
+    padding: 10px;
+    width: 100%;
+}
+
+
+#poisk input {
+	background: #f7f7f7;
+	border: none;
+	height: 100%;
+	margin: 0;
+	float: left;
+	margin-right: 10px;
+	width: 71%;
+	outline: none;
+	padding: 0 10px;
+}
+
+#poisk button {
+	width: 30px;
+	height: 29px;
+	border: none;
+	background: #ffffff;
+	outline: none;
+	cursor: pointer;
+	padding: 0;
+}
+
+#poisk button:active {
+background: #723c7f;
+}
+
+#poisk button img {
+	height: 100%;
+    width: 100%;
+}
+
+#users {
+	width: 271px;
+	height: 100%;
+	float: left;
+}
+
+#spisok {
+	height: calc(100% - 50px);
+	overflow-y: auto;
+}
+
+#spisok-soobsheniy {
+	height: 80%;
+	overflow-y: auto; 
+}
+
+ 
+
+#spisok ul li {
+	position: relative;
+	padding: 10px;
+	width: calc(100% - 20px);
+
+}
+
+#spisok ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#spisok ul .user {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 10px;
+}
+
+#spisok ul .user img {
+	width: 100%;
+	height: 100%;
+}
+
+#spisok ul li .time {
+	position: absolute; 
+	top: 17px;
+	right: 10px;
+}
+#spisok ul li a {
+text-decoration: none;
+color: black;
+}
+
+#spisok h2,
+#spisok p {
+	margin: 0;
+}
+
+#spisok h2 {
+	margin-bottom: 5px;
+}
+
+/*
+ Делаем красивый скролл
+*/
+#spisok::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+#spisok::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+#spisok::-webkit-scrollbar-thumb
+{
+	background-color: #AAA;
+	border-radius: 8px;
+	background-image: -webkit-linear-gradient(90deg,
+	                                          rgba(0, 0, 0, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(0, 0, 0, .2) 50%,
+											  rgba(0, 0, 0, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+
+/*
+ Стили для переписки с пользователем
+*/
+
+#soobsheniya {
+	width: calc(800px - 271px);
+    float: right;
+    height: 100%;
+    overflow-y: auto; 
+
+}
+
+#spisok-soobsheniy ul {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#soobsheniya ul .user {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 10px;
+
+}
+
+#soobsheniya ul .user img {
+	width: 100%;
+	height: 100%;
+
+}
+
+#soobsheniya ul li {
+	position: relative;
+	padding: 10px;
+} 
+
+#soobsheniya ul li a {
+text-decoration: none;
+color: black;
+}
+
+#soobsheniya ul h2,
+#soobsheniya ul p {
+	margin: 0;
+} 
+
+#soobsheniya ul .time {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+/*
+ Делаем красивый скролл
+*/
+#spisok-soobsheniy::-webkit-scrollbar-track, 
+.modal .content::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+#spisok-soobsheniy::-webkit-scrollbar, 
+.modal .content::-webkit-scrollbar {
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+#spisok-soobsheniy::-webkit-scrollbar-thumb, 
+.modal .content::-webkit-scrollbar-thumb {
+	background-color: #AAA;
+	border-radius: 8px;
+	background-image: -webkit-linear-gradient(90deg,
+	                                          rgba(0, 0, 0, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(0, 0, 0, .2) 50%,
+											  rgba(0, 0, 0, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+
+/*
+  Стили для формы отправки сообщений
+*/
+#form {
+	padding: 10px;
+    height: calc(20% - 20px);
+}
+
+#form textarea {
+	width: 80%;
+    height: 80%;
+}
+
+#form button {
+	border: 0;
+	outline: none;
+	background: none;
+	width: 17%;
+    height: 60%;
+	cursor: pointer;
+}
+
+#form button img {
+	width: 100%;
+	height: 100%;
+}
+
+/*
+  Стили для модальных окон
+*/
+
+.modal {
+	display: none;
+	width: 360px;
+	background: white;
+	border-radius: 10px;
+	border: 2px solid #723c7f;
+	position: absolute;
+	top: 100px;
+	left: calc(50% - 200px);
+	padding: 20px;
+	max-height: 675px;
+	z-index: 9999;
+}
+
+.modal .content {
+	overflow-y: auto;
+	height: 380px;
+	margin-top: 20px;
+}
+
+.modal .close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+/*
+  Модальное окно с контактами
+*/
+
+#contacts-modal ul .user {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 10px;
+
+}
+
+#contacts-modal ul .user img {
+	width: 100%;
+	height: 100%;
+
+}
+
+#contacts-modal ul li {
+	position: relative;
+	padding: 10px;
+	list-style: none;
+} 
+
+#contacts-modal ul h2 {
+	margin: 10px;
+} 
+
+/*
+  Модальное окно регистрации
+*/
+
+.registration {
+	display: none;
+	width: 275px;
+	background: white;
+	border-radius: 10px;
+	border: 2px solid #723c7f;
+	position: absolute;
+	top: 100px;
+	right: 20px;
+	padding: 20px;
+	height: 150px;
+}
+
+.registration .close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.registration button {
+	width: 60px;
+	height: 29px;
+	outline: none;
+	cursor: pointer;
+	padding: 0;
+	top: 150px;
+	position: absolute;
+	right: 20px;
+	border-radius: 10px;
+	background: #723c7f;
+	font-size: 16px;
+	color: white;
+	border: black;
+}
+
+ #parol {
+ 	position: absolute;
+    top: 88px;
+ }
+
+ #email {
+ 	position: absolute;
+    top: 30px;
+ }
+
+ #parol input {
+ 	position: absolute;
+    width: 150px;
+    margin: 5px;
+    top: -7px;
+ }
+
+
+
