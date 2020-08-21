@@ -1,2 +1,2 @@
-# multiprogrammer.github.io
-Test/game for student IT
+# GeorgosDansio.github.io
+Test/game for student IT - multiprogrammer
